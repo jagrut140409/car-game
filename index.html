@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Highway Dash</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <h1>Highway Dash</h1>
+    <section class="hud" aria-live="polite">
+      <span>Score: <strong id="score">0</strong></span>
+      <span>Best: <strong id="best">0</strong></span>
+      <span>Speed: <strong id="speed">1</strong>x</span>
+    </section>
+    <canvas id="game" width="400" height="650" aria-label="Car game"></canvas>
+    <p class="instructions">Use <b>←</b> <b>→</b> or <b>A</b> <b>D</b> to steer. Press <b>Space</b> to start or restart.</p>
+    <button id="startButton" type="button">Start Game</button>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
